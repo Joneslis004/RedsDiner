@@ -1,0 +1,106 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $defaultFont;
+  font-weight: $lightWeight;
+  background-color: $bodyBackground;
+  margin: 0;
+}
+
+#headerWrapper {
+  border-bottom: 1px solid $greyColor;
+}
+header {
+  display: grid;
+  grid-template-columns: 50px auto;
+  align-items: center;
+  padding: 0.5rem $gutter;
+
+  img {
+    max-width: 100%;
+  }
+
+  span {
+    color: $primaryColor;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+  }
+}
+
+#navWrapper {
+  background-color: $secondaryColor;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  padding: 0.75rem $gutter;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: darken($secondaryColor, 10%);
+  }
+}
+.active a {
+  background-color: $primaryColor;
+}
+
+.hero {
+  padding: .8rem;
+  position: relative;
+  text-align: center;
+  color: white;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#video-heading {
+  font-family: $defaultFont; 
+  font-size: 1.5rem;                   
+  font-weight: $boldWeight;                
+  color: $primaryColor;                  
+  text-align: center;               
+  line-height: 1.2;                  
+}
+
+video {
+  width: 90%;
+  margin-left: 5%;
+}
+
+details {
+  margin: .5rem $gutter;
+summary {
+  background-color:#8ea48b;
+}
+}
+
+#footerWrapper {
+  background-color: $primaryColor;
+}
+footer {
+  color: $greyColor;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+
+  a {
+    color: $greyColor;
+  }
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Uintah Architecture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Compiled CSS -->
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+  <header id="headerWrapper">
+    <img src="images/logo1x.png" alt="Uintah Architecture logo" width="100">
+    <span>Uintah Architecture</span>
+  </header>
+
+  <nav id="navWrapper" aria-label="Main navigation">
+    <ul>
+      <li><a href="#">Implement</a></li>
+      <li><a href="#">Practice</a></li>
+      <li class="active"><a href="#">Learn</a></li>
+    </ul>
+  </nav>
+
+  <main id="mainWrapper" class="main-content" role="main">
+
+    <!-- Hero: responsive pictures with art direction -->
+    <section class="hero" aria-label="Main hero">
+      <picture>
+        <!-- large (1500px) -->
+        <source media="(min-width:1025px)" srcset="images/hero-large.png" type="image/png">
+
+        <!-- medium (1000px) -->
+        <source media="(min-width:600px)" srcset="images/hero-medium.png" type="image/png">
+
+        <!-- small (500px) -->
+        <source media="(max-width:599px)" srcset="images/hero-small.png" type="image/png">
+        <img src="images/hero-small.png" alt="Exterior shot of a modern architecture project" width="100%" loading="lazy">
+      </picture>
+    </section>
+
+
+    <section class="hero-video">
+      <h2 id="video-heading">Company introduction video</h2>
+
+      <video controls>
+        <source src="media/trimmed_hb.webm" type="video/webm">
+        <source src="media/trimmed_hb.mp4" type="video/mp4">
+        <track
+        label="English"
+        kind="subtitles"
+        srclang="en"
+        src="media/lisette-en.vtt"
+        default />
+
+         <track
+        label="Español"
+        kind="subtitles"
+        srclang="es"
+        src="media/lisette-es.vtt"/>
+</video>
+ </section>
+<details>
+  <summary>Video Transcript</summary>
+    <p>Hi everyone and welcome to UN Architecture. I wanted to talk a little bit about what we do here at UN Architecture and what kind of sets us apart 
+      from other architecture businesses. 
+      <p>Um we combine a lot of modern design with um with our natural surroundings. So we use a lot of what is already there,
+       hills, um wood kind we kind of build it into the natural surroundings. Um we like to use a very
+
+energy efficient and environmentally friendly style of design. Um, we want it to be super functional and super beautiful and just kind of make sure that it's everything that our client wants
+. We build it specifically to your needs and um, we are very client-based, so we want it to be perfect for our clients. And yeah, that's a little bit about</p>
+</details>
+
+
+
+  </main>
+
+  <footer id="footerWrapper">
+    <p>
+      &copy; <time datetime="2025">2025</time> • Uintah Architecture • All rights reserved •
+      <a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a> • <a href="#">Clients</a>
+    </p>
+  </footer>
+</body>
+</html>
